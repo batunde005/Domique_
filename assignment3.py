@@ -1,16 +1,27 @@
-#student_score = 60
-#print(student_score >60 andstudent_score< 70)
+English = int(input("enter your score in english over 100 :"))
+Maths = int(input("enter your score in maths over 100 :"))
+Biology = int(input("enter your score in biology over 100 :"))
+Chemistry = int(input("enter your score in chemistry over 100 :"))
+Civic = int(input("enter your score in civic over 100 :")) 
+IT =int(input("enter your score in IT over 100 :"))
+DP = int(input("enter your score in DP over 100 :"))
+Economics = int(input("enter your score in economics over 100 :"))
+Psychology = int(input("enter your score in psychology over 100 :"))
+Technical_drawing = int(input("enter your score in technical drawing over 100 :"))
+Position = int((English + Maths + Biology + Chemistry + Civic + IT + DP + Economics + Psychology + Technical_drawing)/10) 
+print(Position)
 
-name_of_user = int(input("enter a player age"))
-year_of_player = 2024
-if name_of_user == year_of_player:
-    print("you are qualify")
-
-elif name_of_user > year_of_player:
-    print("you are under age")
-
-elif name_of_user < year_of_player:
-    print("you are way too low")
-
+if Position < 0 or Position > 100:
+    print("Invalid input entered please check and try again ")
+elif Position >= 70:
+    print("your grade is A") 
+elif Position >= 60 : 
+    print("your grade is C...try working more hard next time") 
+elif Position >= 50 :
+    print("your grade is D...you can do better than this next time") 
+elif Position >= 40: 
+    print("your grade is E...this is a very low grade, please work more hard next time") 
+elif Position >= 30:
+    print("your grade is F... There's no hope for you again") 
 else:
-    print("you are not eligible")
+    print(" the Lord is your strength") 
